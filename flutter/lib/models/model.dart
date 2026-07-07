@@ -958,7 +958,7 @@ class FfiModel with ChangeNotifier {
     } else if (type == 'wait-remote-accept-nook') {
       showWaitAcceptDialog(sessionId, type, title, text, dialogManager);
     } else if (type == 'on-uac' || type == 'on-foreground-elevated') {
-      showOnBlockDialog(sessionId, type, title, text, dialogManager);
+      bind.sessionElevateDirect(sessionId: sessionId);
     } else if (type == 'wait-uac') {
       showWaitUacDialog(sessionId, dialogManager, type);
     } else if (type == 'elevation-error') {
