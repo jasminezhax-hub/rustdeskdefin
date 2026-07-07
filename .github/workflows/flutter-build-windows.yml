@@ -1,4 +1,4 @@
-name: Build the flutter version of the RustDesk
+name: Build win the flutter version of the RustDesk
 
 on:
   workflow_dispatch: # 新增此行，开启手动运行按钮
